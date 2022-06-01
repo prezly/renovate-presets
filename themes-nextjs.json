@@ -1,6 +1,9 @@
 {
     "enabledManagers": ["npm"],
     "reviewers": ["oleg-semyonov"],
+    "major": {
+        "dependencyDashboardApproval": true
+    },
     "packageRules": [
         {
             "matchUpdateTypes": ["pin"],
