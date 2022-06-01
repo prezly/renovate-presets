@@ -30,8 +30,13 @@
             "automerge": true
         },
         {
+            "matchPackageNames": ["@prezly/themes-intl-messages"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "automerge": true
+        },
+        {
             "matchPackagePatterns": ["^@sentry"],
-            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+            "matchUpdateTypes": ["minor", "patch"],
             "automerge": true
         }
     ]
