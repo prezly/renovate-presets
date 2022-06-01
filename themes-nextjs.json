@@ -21,6 +21,15 @@
             "allowedVersions": "<18"
         },
         {
+            "matchPackageNames": ["@prezly/eslint-config"],
+            "automerge": true
+        },
+        {
+            "matchPackageNames": ["@prezly/theme-kit-nextjs"],
+            "matchUpdateTypes": ["patch"],
+            "automerge": true
+        },
+        {
             "matchPackagePatterns": ["^@sentry"],
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true
