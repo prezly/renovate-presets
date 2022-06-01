@@ -3,6 +3,10 @@
     "reviewers": ["oleg-semyonov"],
     "packageRules": [
         {
+            "matchUpdateTypes": ["pin"],
+            "automerge": true
+        },
+        {
             "packagePatterns": ["*"],
             "excludePackagePatterns": ["^@prezly", "^@sentry"],
             "enabled": false
@@ -15,6 +19,11 @@
             "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
             "groupName": "React",
             "allowedVersions": "<18"
+        },
+        {
+            "matchPackagePatterns": ["^@sentry"],
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+            "automerge": true
         }
     ]
 }
