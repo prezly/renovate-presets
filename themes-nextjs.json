@@ -8,6 +8,10 @@
             "enabled": false
         },
         {
+            "matchPackageNames": ["@prezly/content-renderer-react-js", "@prezly/story-content-format"],
+            "groupName": "Prezly Content Renderer",
+        },
+        {
             "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
             "groupName": "React",
             "allowedVersions": "<18"
