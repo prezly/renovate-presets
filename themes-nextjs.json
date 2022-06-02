@@ -28,7 +28,7 @@
             "automerge": true
         },
         {
-            "matchPackageNames": ["@prezly/theme-kit-nextjs"],
+            "matchPackagePatterns": ["^@prezly"],
             "matchUpdateTypes": ["patch"],
             "automerge": true
         },
