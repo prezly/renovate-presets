@@ -1,7 +1,7 @@
 
    
 {
-    "extends": [":preserveSemverRanges"],
+    "extends": [":pinOnlyDevDependencies"],
     "enabledManagers": ["npm", "github-actions"],
     "reviewers": ["oleg-semyonov"],
     "major": {
