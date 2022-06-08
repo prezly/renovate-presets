@@ -1,0 +1,38 @@
+
+   
+{
+    "enabledManagers": ["npm", "github-actions"],
+    "reviewers": ["oleg-semyonov"],
+    "major": {
+        "dependencyDashboardApproval": true
+    },
+    "packageRules": [
+        {
+            "matchUpdateTypes": ["pin"],
+            "automerge": true
+        },
+        {
+            "matchPackageNames": ["@prezly/content-renderer-react-js", "@prezly/story-content-format"],
+            "groupName": "Prezly Content Renderer",
+        },
+        {
+            "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
+            "groupName": "React",
+            "allowedVersions": "<18"
+        },
+        {
+            "matchPackageNames": ["@prezly/eslint-config"],
+            "automerge": true
+        },
+        {
+            "matchPackagePatterns": ["^@prezly"],
+            "matchUpdateTypes": ["patch"],
+            "automerge": true
+        },
+        {
+            "matchDepTypes": ["devDependencies"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "automerge": true
+        }
+    ]
+}
