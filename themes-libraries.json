@@ -1,16 +1,13 @@
 
    
 {
+    "extends": [":preserveSemverRanges"],
     "enabledManagers": ["npm", "github-actions"],
     "reviewers": ["oleg-semyonov"],
     "major": {
         "dependencyDashboardApproval": true
     },
     "packageRules": [
-        {
-            "matchUpdateTypes": ["pin"],
-            "automerge": true
-        },
         {
             "matchPackageNames": ["@prezly/content-renderer-react-js", "@prezly/story-content-format"],
             "groupName": "Prezly Content Renderer",
