@@ -9,6 +9,10 @@
     },
     "packageRules": [
         {
+            "matchUpdateTypes": ["pin"],
+            "automerge": true
+        },
+        {
             "matchPackageNames": ["@prezly/content-renderer-react-js", "@prezly/story-content-format"],
             "groupName": "Prezly Content Renderer",
         },
