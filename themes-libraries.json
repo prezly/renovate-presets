@@ -22,10 +22,6 @@
             "allowedVersions": "<18"
         },
         {
-            "matchPackageNames": ["@prezly/eslint-config"],
-            "automerge": true
-        },
-        {
             "matchPackagePatterns": ["^@prezly"],
             "matchUpdateTypes": ["patch"],
             "automerge": true
