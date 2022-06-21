@@ -6,13 +6,9 @@
     },
     "packageRules": [
         {
-            "matchUpdateTypes": ["pin"],
+            "matchUpdateTypes": ["pin", "patch"],
+            "excludePackageNames": ["typescript"],
             "automerge": true
-        },
-        {
-            "packagePatterns": ["*"],
-            "excludePackagePatterns": ["^@prezly", "^@sentry"],
-            "enabled": false
         },
         {
             "matchPackageNames": ["@prezly/content-renderer-react-js", "@prezly/story-content-format"],
@@ -22,10 +18,6 @@
             "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
             "groupName": "React",
             "allowedVersions": "<18"
-        },
-        {
-            "matchPackageNames": ["@prezly/eslint-config"],
-            "automerge": true
         },
         {
             "matchPackagePatterns": ["^@prezly"],
@@ -40,6 +32,12 @@
         {
             "matchPackagePatterns": ["^@sentry"],
             "matchUpdateTypes": ["minor", "patch"],
+            "automerge": true
+        },
+        {
+            "matchDepTypes": ["devDependencies"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "excludePackageNames": ["typescript"],
             "automerge": true
         }
     ]
