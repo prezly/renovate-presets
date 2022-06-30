@@ -17,11 +17,6 @@
             "groupName": "Prezly Content Renderer",
         },
         {
-            "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
-            "groupName": "React",
-            "allowedVersions": "<18"
-        },
-        {
             "matchPackagePatterns": ["^@prezly"],
             "matchUpdateTypes": ["patch"],
             "automerge": true
