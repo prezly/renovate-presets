@@ -24,6 +24,7 @@
         {
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch"],
+            "excludePackageNames": ["typescript"],
             "automerge": true
         }
     ]
