@@ -16,7 +16,7 @@
         },
         {
             "matchPackagePatterns": ["^@prezly"],
-            "matchUpdateTypes": ["patch"],
+            "matchUpdateTypes": ["minor", "patch"],
             "automerge": true
         },
         {
