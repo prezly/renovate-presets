@@ -30,6 +30,11 @@
             "matchUpdateTypes": ["minor", "patch"],
             "excludePackageNames": ["typescript"],
             "automerge": true
+        },
+        {
+            "matchManagers": ["github-actions"],   
+            "matchUpdateTypes": ["minor", "patch"],
+            "automerge": true
         }
     ]
 }
