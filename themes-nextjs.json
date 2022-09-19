@@ -24,7 +24,7 @@
         },
         {
             "matchPackagePatterns": ["^@sentry"],
-            "matchPackageNames": ["@react-hookz/web", "react-intl", "react-instantsearch-dom", "social-links"],
+            "matchPackageNames": ["@react-hookz/web", "react-intl", "react-instantsearch-dom", "social-links", "@headlessui/react"],
             "matchManagers": ["github-actions"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true
