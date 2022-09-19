@@ -7,7 +7,6 @@
     "packageRules": [
         {
             "matchUpdateTypes": ["pin", "patch"],
-            "excludePackageNames": ["typescript"],
             "automerge": true
         },
         {
@@ -24,13 +23,9 @@
             "automerge": true
         },
         {
-            "matchPackageNames": ["@prezly/themes-intl-messages"],
-            "matchUpdateTypes": ["minor", "patch"],
-            "automerge": true
-        },
-        {
             "matchPackagePatterns": ["^@sentry"],
-            "matchPackageNames": ["@react-hookz/web"],
+            "matchPackageNames": ["@react-hookz/web", "react-intl", "react-instantsearch-dom", "social-links"],
+            "matchManagers": ["github-actions"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true
         },
