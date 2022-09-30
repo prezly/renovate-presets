@@ -23,10 +23,9 @@
             "automerge": true
         },
         {
-            "matchPackagePatterns": ["^@sentry", "^react-instantsearch-"],
-            "matchPackageNames": ["@react-hookz/web", "react-intl", "social-links", "@headlessui/react"],
-            "matchManagers": ["github-actions"],
             "matchUpdateTypes": ["minor", "patch"],
+            "matchCurrentVersion": "!/^0/",
+            "matchManagers": ["github-actions", "npm"],
             "automerge": true
         },
         {
