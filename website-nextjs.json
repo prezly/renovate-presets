@@ -1,4 +1,5 @@
 {
+    "extends": [":pinAllExceptPeerDependencies"],
     "enabledManagers": ["npm", "github-actions"],
     "reviewers": ["oleg-semyonov"],
     "major": {
