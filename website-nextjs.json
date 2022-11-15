@@ -27,6 +27,7 @@
             "matchUpdateTypes": ["minor", "patch"],
             "matchCurrentVersion": "!/^0/",
             "matchManagers": ["github-actions", "npm"],
+            "excludePackageNames": ["next", "@prezly/uploadcare-image"],
             "automerge": true
         },
         {
