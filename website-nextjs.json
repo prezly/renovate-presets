@@ -1,0 +1,38 @@
+{
+    "enabledManagers": ["npm", "github-actions"],
+    "reviewers": ["oleg-semyonov"],
+    "major": {
+        "dependencyDashboardApproval": true
+    },
+    "packageRules": [
+        {
+            "matchUpdateTypes": ["pin"],
+            "automerge": true
+        },
+        {
+            "matchPackageNames": ["@prezly/content-renderer-react-js", "@prezly/story-content-format"],
+            "groupName": "Prezly Content Renderer",
+        },
+        {
+            "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
+            "groupName": "React",
+        },
+        {
+            "matchPackagePatterns": ["^@prezly"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "automerge": true
+        },
+        {
+            "matchUpdateTypes": ["minor", "patch"],
+            "matchCurrentVersion": "!/^0/",
+            "matchManagers": ["github-actions", "npm"],
+            "automerge": true
+        },
+        {
+            "matchDepTypes": ["devDependencies"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "excludePackageNames": ["typescript"],
+            "automerge": true
+        }
+    ]
+}
