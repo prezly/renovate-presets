@@ -18,14 +18,9 @@
             "groupName": "React",
         },
         {
-            "matchPackagePatterns": ["^@prezly"],
-            "matchUpdateTypes": ["minor", "patch"],
-            "automerge": true
-        },
-        {
+            "matchDepTypes": ["dependencies"],
             "matchUpdateTypes": ["minor", "patch"],
             "matchCurrentVersion": "!/^0/",
-            "matchManagers": ["github-actions", "npm"],
             "automerge": true
         },
         {
@@ -33,6 +28,11 @@
             "matchUpdateTypes": ["minor", "patch"],
             "excludePackageNames": ["typescript"],
             "automerge": true
-        }
+        },
+        {
+            "matchUpdateTypes": ["minor", "patch"],
+            "matchManagers": ["github-actions"],
+            "automerge": true
+        },
     ]
 }
