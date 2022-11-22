@@ -22,7 +22,7 @@
             "matchDepTypes": ["dependencies"],
             "matchUpdateTypes": ["minor", "patch"],
             "matchCurrentVersion": "!/^0/",
-            "excludePackageNames": ["next", "@prezly/uploadcare-image"],
+            "excludePackageNames": ["next", "@prezly/uploadcare-image", "@sentry/nextjs"],
             "automerge": true
         },
         {
