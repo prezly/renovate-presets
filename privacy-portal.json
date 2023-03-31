@@ -1,0 +1,36 @@
+{
+    "extends": [":pinAllExceptPeerDependencies"],
+    "enabledManagers": ["npm", "github-actions"],
+    "reviewers": ["oleg-semyonov"],
+    "major": {
+        "dependencyDashboardApproval": true
+    },
+    "packageRules": [
+        {
+            "matchUpdateTypes": ["pin"],
+            "automerge": true
+        },
+        {
+            "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
+            "groupName": "React",
+        },
+        {
+            "matchDepTypes": ["dependencies"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "matchCurrentVersion": "!/^0/",
+            "excludePackageNames": ["next", "@prezly/uploadcare-image"],
+            "automerge": true
+        },
+        {
+            "matchDepTypes": ["devDependencies"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "excludePackageNames": ["typescript"],
+            "automerge": true
+        },
+        {
+            "matchUpdateTypes": ["minor", "patch"],
+            "matchManagers": ["github-actions"],
+            "automerge": true
+        },
+    ]
+}
