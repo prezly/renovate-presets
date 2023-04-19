@@ -17,6 +17,10 @@
             "groupName": "Prezly Content Renderer",
         },
         {
+            "matchPackagePatterns": ["^@prezly/theme-kit"],
+            "groupName": "Theme Kit",
+        },
+        {
             "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
             "groupName": "React",
         },
