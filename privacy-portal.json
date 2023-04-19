@@ -15,6 +15,10 @@
             "groupName": "React",
         },
         {
+            "matchPackagePatterns": ["^@prezly/theme-kit"],
+            "groupName": "Theme Kit",
+        },
+        {
             "matchDepTypes": ["dependencies"],
             "matchUpdateTypes": ["minor", "patch"],
             "matchCurrentVersion": "!/^0/",
