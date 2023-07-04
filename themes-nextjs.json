@@ -1,5 +1,6 @@
 {
     "enabledManagers": ["npm", "github-actions"],
+    "automergeSchedule": ["after 8pm and before 8am every weekday", "every weekend"],
     "reviewers": ["oleg-semyonov"],
     "major": {
         "dependencyDashboardApproval": true
