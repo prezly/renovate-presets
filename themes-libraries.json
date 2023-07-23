@@ -33,7 +33,8 @@
         {
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch"],
-            "excludePackageNames": ["typescript"],
+            "matchCurrentVersion": "!/^0/",
+            "excludePackageNames": ["typescript", "next"],
             "automerge": true
         },
         {
