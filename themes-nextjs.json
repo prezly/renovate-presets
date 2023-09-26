@@ -30,6 +30,11 @@
             "automerge": true
         },
         {
+            "matchPackageNames": ["next"],
+            "matchUpdateTypes": ["patch"],
+            "automerge": true
+        },
+        {
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch"],
             "excludePackageNames": ["typescript"],

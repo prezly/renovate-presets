@@ -38,6 +38,11 @@
             "automerge": true
         },
         {
+            "matchPackageNames": ["next"],
+            "matchUpdateTypes": ["patch"],
+            "automerge": true
+        },
+        {
             "matchManagers": ["github-actions"],   
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true
