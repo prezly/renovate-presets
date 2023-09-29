@@ -1,5 +1,6 @@
 {
     "enabledManagers": ["npm", "github-actions"],
+    "schedule": ["every weekend"],
     "automergeSchedule": ["after 8pm and before 8am every weekday", "every weekend"],
     "reviewers": ["oleg-semyonov"],
     "major": {
@@ -17,6 +18,10 @@
         {
             "matchPackagePatterns": ["^@prezly/theme-kit"],
             "groupName": "Theme Kit"
+        },
+        {
+            "matchPackagePatterns": ["^@prezly/"],
+            "schedule": ["after 8pm and before 8am every weekday", "every weekend"]
         },
         {
             "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
