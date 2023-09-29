@@ -2,6 +2,7 @@
     "extends": [":pinAllExceptPeerDependencies"],
     "enabledManagers": ["npm", "github-actions"],
     "schedule": ["every weekend"],
+    "updateNotScheduled": false,
     "automergeSchedule": ["after 8pm and before 8am every weekday", "every weekend"],
     "reviewers": ["oleg-semyonov"],
     "major": {
@@ -50,6 +51,6 @@
             "matchUpdateTypes": ["minor", "patch"],
             "matchManagers": ["github-actions"],
             "automerge": true
-        },
+        }
     ]
 }
