@@ -15,15 +15,15 @@
         },
         {
             "matchPackageNames": ["@prezly/content-renderer-react-js", "@prezly/story-content-format"],
-            "groupName": "Prezly Content Renderer",
+            "groupName": "Prezly Content Renderer"
         },
         {
             "matchPackagePatterns": ["^@prezly/theme-kit"],
-            "groupName": "Theme Kit",
+            "groupName": "Theme Kit"
         },
         {
             "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
-            "groupName": "React",
+            "groupName": "React"
         },
         {
             "matchPackagePatterns": ["^@prezly"],

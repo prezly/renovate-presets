@@ -13,17 +13,22 @@
         },
         {
             "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
-            "groupName": "React",
+            "groupName": "React"
         },
         {
             "matchPackagePatterns": ["^@prezly/theme-kit"],
-            "groupName": "Theme Kit",
+            "groupName": "Theme Kit"
         },
         {
             "matchDepTypes": ["dependencies"],
             "matchUpdateTypes": ["minor", "patch"],
             "matchCurrentVersion": "!/^0/",
             "excludePackageNames": ["next", "@prezly/uploadcare-image"],
+            "automerge": true
+        },
+        {
+            "matchPackageNames": ["next"],
+            "matchUpdateTypes": ["patch"],
             "automerge": true
         },
         {
@@ -36,6 +41,6 @@
             "matchUpdateTypes": ["minor", "patch"],
             "matchManagers": ["github-actions"],
             "automerge": true
-        },
+        }
     ]
 }
